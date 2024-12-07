@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class background : MonoBehaviour
 {   
-    public float deadZone=-5f;float timer=0f;  public float amount=20f;
+    public float deadZone=-5f;//float timer=0f;  
+    public float amount=20f;
     public Vector3 defaultPos; public bool isDouble=false;
     private void Start() {
         transform.position=defaultPos;

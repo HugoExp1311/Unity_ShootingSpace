@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: WhiteCell
   m_EditorClassIdentifier: 
   name: WhiteCell
-  health: 300
+  health: 1200
   damage: 5
+  exp: 12
   firePoints: 0

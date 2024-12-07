@@ -1,9 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading;
-using Unity.Mathematics; //math vs random
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using Random = UnityEngine.Random; //math vs random
 
@@ -29,11 +26,12 @@ public BossHandle bossHandle;
     float timer=0f,spawn=2f;
     public TrailRenderer trailRenderer;
     public Vector3 randDir;
-  public bool isPhase2=false,isDash=false,isTrap=false,canDash=false;
+  public bool isPhase2=false,isDash=false,isTrap=false,canDash=false; 
     
     private void Awake() {
       rb=GetComponent<Rigidbody2D>();
       hPbar=GetComponentInChildren<HP_Enemy1>();
+    //gameObject.GetComponentInChildren<PlayableDirector>().enabled=true;
        
     }
     private void Start() {
@@ -55,11 +53,10 @@ private void FixedUpdate() {
   if(timer<spawn){timer+=.5f;}
   else{ 
   rb.velocity=new Vector2(MoveDirection.x,MoveDirection.y)*moveSpeed;
-  timer=0f;
+  if(isPhase2){
+   rb.velocity=new Vector2(MoveDirection.x,MoveDirection.y)*moveSpeed*1.5f;
+  } timer=0f;
   }
-  if(isPhase2&&canDash){
-   
-  StartCoroutine(Dashing());}
   
 }
 IEnumerator Dashing(){
@@ -79,8 +76,7 @@ public  void TakeDamage(float damage){
   health-=damage;
   hPbar.UpdateHealthBar(health,healthMax);
   if (health<=(healthMax/2)){ isPhase2=true;
-   // Check if the reference is valid
-            //spawnerPrefab.SetActive(true);
+   
             }
     if (health<=0f){ health=0f;
     if (health==0f){

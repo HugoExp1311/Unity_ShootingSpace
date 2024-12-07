@@ -6,6 +6,8 @@ public class Qnau : MonoBehaviour,IEnemy
 
 { [SerializeField] private  float spin=2f;
 public bool isSplit=false;
+  public EnemyClass enemyClass;
+
 public Rigidbody2D rb;
 [SerializeField] private float damage = 30f;
 [SerializeField] private  float healthMax=50f;
@@ -15,13 +17,22 @@ public Rigidbody2D rb;
  
 public float deadZone=-15f;
 private Vector3 smallScale; 
+  [SerializeField] private int expAmount; 
+   Vector2 moveDir;  Transform target;
 
     private void Start() {
         smallScale= new Vector3(.4f,.4f);
         health=healthMax;
         rb.GetComponent<Rigidbody2D>();
-        
+        expAmount=enemyClass.exp;
+ target=GameObject.FindWithTag("Player").transform;
+  Vector3 direction=(target.position-transform.position).normalized;
+     float angle=Mathf.Atan2(direction.y,direction.x)*Mathf.Deg2Rad;
+     moveDir=direction;  
+      rb.velocity=new Vector2(moveDir.x,moveDir.y)*5;
+    
     }
+    
 
 
     // Update is called once per frame
@@ -31,7 +42,7 @@ private Vector3 smallScale;
      //randDir=new Vector3(Random.Range(-2,2),Random.Range(-2,2));
      //float fallAngle=Mathf.Atan2(randDir.y,randDir.x)*Mathf.Rad2Deg-90f;  //Pattern: take the angle
      //rb.rotation=fallAngle;
-    Destroy(gameObject,10f);
+    Destroy(gameObject,6f);
     
  }
     /* private void OnCollisionEnter2D(Collision2D collision) {
@@ -58,7 +69,7 @@ private Vector3 smallScale;
        for(int i=0;i<2;i++){
         GameObject newgameObject= Instantiate(gameObject,transform.position+new Vector3(Random.Range(-2,2),Random.Range(-1,0))*2f,transform.rotation);
         newgameObject.transform.localScale=smallScale;
-      
+     
         }
         }
 

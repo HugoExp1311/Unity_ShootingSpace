@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class inventory : MonoBehaviour
 {
-    public int coinCount;
+    public int coinCount; public UnityEvent coinIncrement;
     public List<InventorySlot> inventorySlots = new List<InventorySlot>();
     private Dictionary<ItemData,InventorySlot> itemDictionary =new Dictionary<ItemData, InventorySlot>();
    /*public bool pickItem(GameObject obj){
@@ -28,6 +29,7 @@ public class inventory : MonoBehaviour
         coinCount++;
         
     }
+    coinIncrement.Invoke();
     }
     public void Remove(ItemData itemData){
         if(itemDictionary.TryGetValue(itemData,out InventorySlot item)){

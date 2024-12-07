@@ -8,10 +8,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 0779a2331413f7c4a8b763154aae589c
+  - enabled: 0
+    path: Assets/Scenes/SlimeKingdom.unity
+    guid: 32af01df5acadcb45993197c41b07595
+  - enabled: 0
+    path: Assets/Scenes/Level1a.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Level1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 934cb2cab5f2dde4eba2478694c99a1f
   - enabled: 1
     path: Assets/Scenes/Level2.unity
     guid: e23e0f2782328f7459e7c11db924ed0e
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: d285f3bded00f6048922566894ee83ad
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 6cc4a59e64c0cdd4da287c077d6450d0
   m_configObjects: {}

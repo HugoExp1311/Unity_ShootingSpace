@@ -5,7 +5,4 @@ using UnityEngine;
 public interface IntfCollectable 
 {
     public abstract void Collect(); 
-    
-    
-    
 }

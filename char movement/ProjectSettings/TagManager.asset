@@ -10,16 +10,21 @@ TagManager:
   - enemy_bullet
   - coin
   - Boss
+  - Pool
+  - Level
+  - Spawner
+  - Canvas
+  - Data
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Eating_item
   - enemy
-  - 
+  - PostProcessing
   - 
   - 
   - 

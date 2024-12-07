@@ -26,6 +26,9 @@ private void setNewDestination(){
 
 void Update(){ Vector3 moveDir= new Vector3(0,-1);
  
+
+
+ 
  if(transform.position.y>4){
     transform.position+=moveDir*speed*Time.deltaTime;} 
     else{
@@ -48,6 +51,6 @@ void Update(){ Vector3 moveDir= new Vector3(0,-1);
  if(gameObject.transform.position.y<deadZone){Destroy(gameObject);}
     }}}
 
-    
+     
         
 

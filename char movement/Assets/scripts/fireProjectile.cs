@@ -15,7 +15,7 @@ private void Start() {
 }
 
    private void SpawnBullet(){
-    if(timer2<spawn2){timer2+=.2f;}
+    if(timer2<spawn2){timer2+=.25f;}
         else{
             for(int i=0;i<FirePoint.Length;i++){
           Bullet= projectilePool.current.GetPool(); //make ref
@@ -29,7 +29,7 @@ private void Start() {
     // Update is called once per frame
     void Update()
     {      
-        if(timer<spawn){timer += .2f;}
+        if(timer<spawn){timer += .25f;}
              else{SpawnBullet();
              timer=0f;}
     }

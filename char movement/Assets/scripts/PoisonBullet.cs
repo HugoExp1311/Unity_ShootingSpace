@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PoisonBullet : MonoBehaviour
+public class PoisonBullet : MonoBehaviour //Ko dung nua
 {    bool isPoison = false;
     [SerializeField] private float poisonDamage = 10f, waitPoison = 5f, poisonDuration=3f;
     float index = 0;

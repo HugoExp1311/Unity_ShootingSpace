@@ -35,7 +35,6 @@ RectTransform:
   m_Children:
   - {fileID: 22467494}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -59,7 +58,9 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -85,7 +86,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &11488232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,6 +155,7 @@ MonoBehaviour:
   pcImage: {fileID: 0}
   pcName:
     m_uiText: {fileID: 0}
+    m_textMeshProUGUI: {fileID: 0}
   usePortraitNativeSize: 0
   timerSlider: {fileID: 0}
   buttonAlignment: 0
@@ -225,7 +227,6 @@ RectTransform:
   m_Children:
   - {fileID: 22487628}
   m_Father: {fileID: 22438518}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -355,6 +356,7 @@ MonoBehaviour:
   button: {fileID: 11454554}
   label:
     m_uiText: {fileID: 11447440}
+    m_textMeshProUGUI: {fileID: 0}
   setLabelColor: 0
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &121446
@@ -392,7 +394,6 @@ RectTransform:
   m_Children:
   - {fileID: 22492740}
   m_Father: {fileID: 22460666}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -522,6 +523,7 @@ MonoBehaviour:
   button: {fileID: 11423782}
   label:
     m_uiText: {fileID: 11467338}
+    m_textMeshProUGUI: {fileID: 0}
   setLabelColor: 0
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &126130
@@ -555,7 +557,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 22455090}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -635,7 +636,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 22436170}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -718,7 +718,6 @@ RectTransform:
   m_Children:
   - {fileID: 22470800}
   m_Father: {fileID: 22476094}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -838,7 +837,6 @@ RectTransform:
   m_Children:
   - {fileID: 22454774}
   m_Father: {fileID: 22412716}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -968,6 +966,7 @@ MonoBehaviour:
   button: {fileID: 11461226}
   label:
     m_uiText: {fileID: 11440652}
+    m_textMeshProUGUI: {fileID: 0}
   setLabelColor: 0
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &161710
@@ -1004,7 +1003,6 @@ RectTransform:
   m_Children:
   - {fileID: 22436170}
   m_Father: {fileID: 22467494}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -1123,7 +1121,6 @@ RectTransform:
   m_Children:
   - {fileID: 22455090}
   m_Father: {fileID: 22476094}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1239,7 +1236,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 22470800}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1323,7 +1319,6 @@ RectTransform:
   - {fileID: 22438518}
   - {fileID: 22412716}
   m_Father: {fileID: 22467494}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -1443,7 +1438,6 @@ RectTransform:
   - {fileID: 22460666}
   - {fileID: 22476094}
   m_Father: {fileID: 22485548}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1502,7 +1496,7 @@ CanvasGroup:
   m_IgnoreParentGroups: 0
 --- !u!95 &9594818
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1519,4 +1513,5 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

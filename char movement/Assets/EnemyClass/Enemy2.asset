@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Enemy2
   m_EditorClassIdentifier: 
   name: Enemy2
-  health: 200
-  damage: 15
-  firePoints: 2
+  health: 150
+  damage: 12
+  exp: 6
+  firePoints: 4

@@ -5,6 +5,6 @@ using UnityEngine;
 public interface IEnemy 
 {
     public void TakeDamage(float damage);
-    //public float BarHealthMax{get;}
-    //public float BarHealthCurrent{get;}
+   // public EnemyColor enemyColor{get;}
+   
 }
